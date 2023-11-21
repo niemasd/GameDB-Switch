@@ -1,0 +1,2 @@
+# GameDB-Switch
+Nintendo Switch
