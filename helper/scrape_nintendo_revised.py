@@ -29,7 +29,7 @@ if __name__ == "__main__":
             if row[0].value is None or row[6].value is None or row[0].value.strip().upper().startswith('GAME NAME'):
                 continue # not a game row
             serial = row[6].value.strip().upper()
-            region = serial.split('-')[-1].strip()
+            region = serial.split('-')[-1].strip()[:3]
             if isdir(serial):
                 continue # duplicate
             makedirs(serial)
